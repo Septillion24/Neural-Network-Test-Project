@@ -1,0 +1,30 @@
+C:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\bin\Debug\net7.0\AI test.exe
+c:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\bin\Debug\net7.0\AI test.deps.json
+c:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\bin\Debug\net7.0\AI test.runtimeconfig.json
+C:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\bin\Debug\net7.0\AI test.dll
+C:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\bin\Debug\net7.0\AI test.pdb
+C:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\obj\Debug\net7.0\AI test.csproj.AssemblyReference.cache
+C:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\obj\Debug\net7.0\AI test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\obj\Debug\net7.0\AI test.AssemblyInfoInputs.cache
+C:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\obj\Debug\net7.0\AI test.AssemblyInfo.cs
+C:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\obj\Debug\net7.0\AI test.csproj.CoreCompileInputs.cache
+C:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\obj\Debug\net7.0\AI test.dll
+C:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\obj\Debug\net7.0\refint\AI test.dll
+C:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\obj\Debug\net7.0\AI test.pdb
+c:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\obj\Debug\net7.0\AI test.genruntimeconfig.cache
+c:\Users\noahg\OneDrive\Desktop\UNCC\Other\Test projects\AI test\obj\Debug\net7.0\ref\AI test.dll
+C:\Projects\Neural-Network-Test-Project\bin\Debug\net7.0\AI test.exe
+c:\Projects\Neural-Network-Test-Project\bin\Debug\net7.0\AI test.deps.json
+c:\Projects\Neural-Network-Test-Project\bin\Debug\net7.0\AI test.runtimeconfig.json
+C:\Projects\Neural-Network-Test-Project\bin\Debug\net7.0\AI test.dll
+C:\Projects\Neural-Network-Test-Project\bin\Debug\net7.0\AI test.pdb
+C:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.csproj.AssemblyReference.cache
+C:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.AssemblyInfoInputs.cache
+C:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.AssemblyInfo.cs
+C:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.csproj.CoreCompileInputs.cache
+C:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.dll
+C:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\refint\AI test.dll
+C:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.pdb
+c:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.genruntimeconfig.cache
+c:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\ref\AI test.dll
