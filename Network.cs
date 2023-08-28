@@ -1,4 +1,4 @@
-class Network 
+class Network
 {
     List<Neuron> inputLayer = new() { };
     List<List<Neuron>> hiddenLayers = new() { };
@@ -10,16 +10,16 @@ class Network
     }
 
 
+    public List<Neuron> getOutputLayer() => outputLayer;
+    public List<Neuron> getInputLayer() => inputLayer;
+
 
     public void createNetwork(List<Neuron> inputLayer, int hiddenLayers, int neuronsInHiddenLayers, int outputNeurons)
     {
         this.inputLayer = inputLayer;
         this.hiddenLayers = createHiddenLayers(inputLayer, hiddenLayers, neuronsInHiddenLayers, outputNeurons);
         this.outputLayer = new() { new Neuron(this.hiddenLayers.Last()) };
-
-
     }
-
     public List<Neuron> createLayer(int neuronsInHiddenLayers, List<Neuron> lastLayer)
     {
         List<Neuron> returnValue = new() { };
@@ -67,4 +67,5 @@ class Network
             Console.WriteLine($"Activation: {neuron.getActivationNumber()}");
         }
     }
+
 }

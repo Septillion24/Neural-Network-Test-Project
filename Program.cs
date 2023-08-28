@@ -15,6 +15,13 @@
         Network network = new(input);
         network.display();
 
+
+        List<Neuron> expected = new()
+        {
+            new InputNeuron(1)
+        };
+        Console.WriteLine("Cost: " + NetworkEvaluiator.evaluateNetwork(network, expected));
+
     }
 
 
