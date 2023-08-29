@@ -21,11 +21,9 @@ class Neuron
         activation = calculateActivation(previousNeuronsWithWeight);
     }
 
-    private double getRandomDouble()
+    private double getRandomDouble(double maxValue = 2, double minValue =-2)
     {
         Random rand = new Random();
-        double minValue = -2.0;
-        double maxValue = 2.0;
         return rand.NextDouble() * (maxValue - minValue) + minValue;
     }
 
@@ -36,6 +34,15 @@ class Neuron
             previousNeuronsWithWeight.Add(neuron, getRandomDouble());
         }
         bias = getRandomDouble();
+    }
+
+    public void randomizeWeightsAndBias(double maxChange)
+    {
+        foreach(KeyValuePair<Neuron,double> kvp in previousNeuronsWithWeight)
+        {
+            previousNeuronsWithWeight[kvp.Key] = kvp.Value + getRandomDouble(maxChange);
+        }
+        bias += getRandomDouble(maxChange);
     }
 
     public double getActivationNumber()

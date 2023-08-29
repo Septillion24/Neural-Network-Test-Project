@@ -28,3 +28,17 @@ C:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\refint\AI test.dll
 C:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.pdb
 c:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.genruntimeconfig.cache
 c:\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\ref\AI test.dll
+C:\Users\noahg\Projects\Neural-Network-Test-Project\bin\Debug\net7.0\AI test.exe
+c:\Users\noahg\Projects\Neural-Network-Test-Project\bin\Debug\net7.0\AI test.deps.json
+c:\Users\noahg\Projects\Neural-Network-Test-Project\bin\Debug\net7.0\AI test.runtimeconfig.json
+C:\Users\noahg\Projects\Neural-Network-Test-Project\bin\Debug\net7.0\AI test.dll
+C:\Users\noahg\Projects\Neural-Network-Test-Project\bin\Debug\net7.0\AI test.pdb
+C:\Users\noahg\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noahg\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.AssemblyInfoInputs.cache
+C:\Users\noahg\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.AssemblyInfo.cs
+C:\Users\noahg\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.csproj.CoreCompileInputs.cache
+C:\Users\noahg\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.dll
+C:\Users\noahg\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\refint\AI test.dll
+C:\Users\noahg\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.pdb
+c:\Users\noahg\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\AI test.genruntimeconfig.cache
+c:\Users\noahg\Projects\Neural-Network-Test-Project\obj\Debug\net7.0\ref\AI test.dll

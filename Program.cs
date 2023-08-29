@@ -14,6 +14,7 @@
 
         Network network = new(input);
         network.display();
+        
 
 
         List<Neuron> expected = new()
