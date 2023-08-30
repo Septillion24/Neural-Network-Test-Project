@@ -13,7 +13,9 @@
         };
 
         Network network = new(input);
-        network.display();
+        network.displayOutput();
+        network.randomizeWeightsAndBiasWithMaxChange(2.0);
+        network.displayOutput();
         
 
 

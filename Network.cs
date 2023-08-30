@@ -20,6 +20,18 @@ class Network
         this.hiddenLayers = createHiddenLayers(inputLayer, hiddenLayers, neuronsInHiddenLayers, outputNeurons);
         this.outputLayer = new() { new Neuron(this.hiddenLayers.Last()) };
     }
+
+    public void randomizeWeightsAndBiasWithMaxChange(double maxChange)
+    {
+        foreach(List<Neuron> layer in hiddenLayers)
+        {
+            foreach(Neuron neuron in layer)
+            {
+                neuron.randomizeWeightsAndBiasWithMaxChange(maxChange);
+            }
+        }
+    }
+
     public List<Neuron> createLayer(int neuronsInHiddenLayers, List<Neuron> lastLayer)
     {
         List<Neuron> returnValue = new() { };
@@ -61,6 +73,14 @@ class Network
             }
         }
 
+        Console.WriteLine("Output Layer:");
+        foreach (var neuron in outputLayer)
+        {
+            Console.WriteLine($"Activation: {neuron.getActivationNumber()}");
+        }
+    }
+    public void displayOutput()
+    {
         Console.WriteLine("Output Layer:");
         foreach (var neuron in outputLayer)
         {

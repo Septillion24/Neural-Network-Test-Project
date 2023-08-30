@@ -14,14 +14,14 @@ class Neuron
     {
         this.previousNeurons = previousNeurons;
         initializeRandomWeightsAndBias(previousNeurons);
-        activation = calculateActivation(previousNeuronsWithWeight);
+        refreshActivation();
     }
     public Neuron()
     {
-        activation = calculateActivation(previousNeuronsWithWeight);
+        refreshActivation();
     }
 
-    private double getRandomDouble(double maxValue = 2, double minValue =-2)
+    private double getRandomDouble(double maxValue = 2, double minValue = -2)
     {
         Random rand = new Random();
         return rand.NextDouble() * (maxValue - minValue) + minValue;
@@ -36,11 +36,14 @@ class Neuron
         bias = getRandomDouble();
     }
 
-    public void randomizeWeightsAndBias(double maxChange)
+    public void randomizeWeightsAndBiasWithMaxChange(double maxChange)
     {
-        foreach(KeyValuePair<Neuron,double> kvp in previousNeuronsWithWeight)
+        foreach (KeyValuePair<Neuron, double> kvp in previousNeuronsWithWeight)
         {
+            // Console.Write("Before: " + kvp.Value);
             previousNeuronsWithWeight[kvp.Key] = kvp.Value + getRandomDouble(maxChange);
+            // Console.Write(", After: " + kvp.Value + ", Expected: " + (kvp.Value + getRandomDouble(maxChange)) + "\n");
+            refreshActivation();
         }
         bias += getRandomDouble(maxChange);
     }
@@ -50,7 +53,7 @@ class Neuron
         return activation;
     }
 
-    private double calculateActivation(Dictionary<Neuron, double> previousNeuronsWithWeight)
+    private void refreshActivation()
     {
         double sum = 0;
         foreach (var kvp in previousNeuronsWithWeight)
@@ -60,7 +63,7 @@ class Neuron
         }
         sum += bias;
         sum = LogSigmoid(sum);
-        return sum;
+        activation = sum;
     }
 
     public double LogSigmoid(double x)
@@ -69,4 +72,18 @@ class Neuron
         else if (x > 45.0) return 1.0;
         else return 1.0 / (1.0 + Math.Exp(-x));
     }
+
+    public string WeightsToString()
+    {
+        string weightsString = "";
+
+        foreach (var kvp in previousNeuronsWithWeight)
+        {
+            weightsString += $"Neuron: {kvp.Key}, Weight: {kvp.Value}\n";
+        }
+
+        return weightsString;
+    }
+
+
 }
