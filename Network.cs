@@ -114,7 +114,7 @@ class Network
     }
     public void displayOutput()
     {
-        Console.WriteLine("Output Layer:");
+        Console.WriteLine("Number of output neurons:" + outputLayer.Count);
         foreach (var neuron in outputLayer)
         {
             Console.WriteLine($"Activation: {neuron.getActivationNumber()}");

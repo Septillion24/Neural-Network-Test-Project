@@ -8,6 +8,8 @@ class Neuron
     double activation = 0;
     double bias = 0;
     List<Neuron> previousNeurons = new() { };
+    Random rand = new Random();
+
     Dictionary<Neuron, double> previousNeuronsWithWeight = new Dictionary<Neuron, double>() { };
 
 
@@ -24,7 +26,6 @@ class Neuron
 
     private double getRandomDouble(double maxValue = 2, double minValue = -2)
     {
-        Random rand = new Random();
         return rand.NextDouble() * (maxValue - minValue) + minValue;
     }
 
@@ -48,8 +49,10 @@ class Neuron
     }
     public Neuron createNewDerivedNeuron(double maxChange)
     {
-        Neuron nextNeuron = new();
-        nextNeuron.previousNeuronsWithWeight = this.previousNeuronsWithWeight;
+        Neuron nextNeuron = new()
+        {
+            previousNeuronsWithWeight = this.previousNeuronsWithWeight
+        };
         nextNeuron.refreshActivation();
         nextNeuron.randomizeWeightsAndBiasWithMaxChange(maxChange);
         return nextNeuron;

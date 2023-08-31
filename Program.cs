@@ -2,28 +2,29 @@
 {
     static void Main(string[] args)
     {
-
-        List<Neuron> input = new()
+        List<Neuron> input = new() 
         {
             new InputNeuron(0),
-            new InputNeuron(1),
-            new InputNeuron(1),
-            new InputNeuron(1),
-            new InputNeuron(0),
+            new InputNeuron(1)
         };
-
-        Network network = new(input);
-        network.displayOutput();
-        network.randomizeWeightsAndBiasWithMaxChange(2.0);
-        network.displayOutput();
-        
-
-
-        List<Neuron> expected = new()
+        List<Neuron> expectedOutput = new()
         {
             new InputNeuron(1)
         };
-        Console.WriteLine("Cost: " + NetworkEvaluiator.evaluateNetwork(network, expected));
+
+        NetworkController controller = NetworkController.Instance;
+
+        controller.createStartGeneration(10, input, expectedOutput);
+
+
+        while(true)
+        {
+
+            Console.WriteLine("Press enter to make new generation");
+            Console.ReadLine();
+            controller.createNewGeneration(10);
+        }
+
 
     }
 
