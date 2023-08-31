@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.Security;
+using System.Security.Cryptography.X509Certificates;
 
 class Neuron
 {
@@ -40,12 +41,18 @@ class Neuron
     {
         foreach (KeyValuePair<Neuron, double> kvp in previousNeuronsWithWeight)
         {
-            // Console.Write("Before: " + kvp.Value);
             previousNeuronsWithWeight[kvp.Key] = kvp.Value + getRandomDouble(maxChange);
-            // Console.Write(", After: " + kvp.Value + ", Expected: " + (kvp.Value + getRandomDouble(maxChange)) + "\n");
             refreshActivation();
         }
         bias += getRandomDouble(maxChange);
+    }
+    public Neuron createNewDerivedNeuron(double maxChange)
+    {
+        Neuron nextNeuron = new();
+        nextNeuron.previousNeuronsWithWeight = this.previousNeuronsWithWeight;
+        nextNeuron.refreshActivation();
+        nextNeuron.randomizeWeightsAndBiasWithMaxChange(maxChange);
+        return nextNeuron;
     }
 
     public double getActivationNumber()

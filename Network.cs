@@ -8,6 +8,12 @@ class Network
     {
         createNetwork(input, 2, 12, 1);
     }
+    public Network(List<Neuron> inputLayer, List<List<Neuron>> hiddenLayers, List<Neuron> outputLayer)
+    {
+        this.inputLayer = inputLayer;
+        this.hiddenLayers = hiddenLayers;
+        this.outputLayer = outputLayer;
+    }
 
 
     public List<Neuron> getOutputLayer() => outputLayer;
@@ -23,13 +29,40 @@ class Network
 
     public void randomizeWeightsAndBiasWithMaxChange(double maxChange)
     {
-        foreach(List<Neuron> layer in hiddenLayers)
+        foreach (List<Neuron> layer in hiddenLayers)
         {
-            foreach(Neuron neuron in layer)
+            foreach (Neuron neuron in layer)
             {
                 neuron.randomizeWeightsAndBiasWithMaxChange(maxChange);
             }
         }
+    }
+
+
+    public Network createNewDerivedNetwork(double maxChange)
+    {
+        List<Neuron> inputLayer = new();
+        List<List<Neuron>> hiddenLayers = new();
+        List<Neuron> outputLayer = new();
+        foreach (Neuron neuron in this.inputLayer)
+        {
+            inputLayer.Add(neuron.createNewDerivedNeuron(maxChange));
+        }
+        List<Neuron> currentHiddenLayer = new() { };
+        foreach (List<Neuron> layer in this.hiddenLayers)
+        {
+            foreach (Neuron neuron in layer)
+            {
+                currentHiddenLayer.Add(neuron.createNewDerivedNeuron(maxChange));
+            }
+            hiddenLayers.Add(currentHiddenLayer);
+            currentHiddenLayer = new() { };
+        }
+        foreach (Neuron neuron in this.outputLayer)
+        {
+            outputLayer.Add(neuron.createNewDerivedNeuron(maxChange));
+        }
+        return new Network(inputLayer, hiddenLayers, outputLayer);
     }
 
     public List<Neuron> createLayer(int neuronsInHiddenLayers, List<Neuron> lastLayer)

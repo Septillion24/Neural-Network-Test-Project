@@ -4,6 +4,8 @@ class NetworkController
 
     private static List<List<Network>> generations = new() { };
     private static List<Network> currentGeneration = new() { };
+    private static List<Neuron> expectedOutputLayer = new() { };
+    private static double currentMutationRate = 0.0;
 
     private NetworkController()
     {
@@ -24,16 +26,16 @@ class NetworkController
 
     public void createNewGeneration(int populationSize)
     {
-        if (!generations.Any())
+        Network successor = pickBestGenerationMember(currentGeneration);
+        List<Network> nextGeneration = new() { };
+        for (int i = 0; i < populationSize; i++)
         {
-
+            nextGeneration.Add(successor.randomizeWeightsAndBiasWithMaxChange(currentMutationRate));
         }
-        else
-        {
 
-        }
 
     }
+
 
     public void createStartGeneration(int populationSize, List<Neuron> input)
     {
@@ -43,10 +45,11 @@ class NetworkController
             generation.Add(new Network(input));
         }
         generations.Add(generation);
+        currentGeneration = generation;
     }
 
 
-    public Network pickBestGenerationMember(List<Network> generation, List<Neuron> expectedOutputLayer)
+    public Network pickBestGenerationMember(List<Network> generation)
     {
         (Network network, double score) best = new();
 
@@ -61,10 +64,10 @@ class NetworkController
 
         return best.network;
     }
-    public Network pickBestGenerationMember(List<Neuron> expectedOutputLayer)
+    public Network pickBestGenerationMember()
     {
         List<Network> generation = currentGeneration;
-        return pickBestGenerationMember(generation, expectedOutputLayer);
+        return pickBestGenerationMember(generation);
     }
 
 }
