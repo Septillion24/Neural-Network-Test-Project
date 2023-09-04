@@ -35,6 +35,10 @@
                 "--project",
                 "${workspaceFolder}/AI test.sln"
             ],
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+            },
             "problemMatcher": "$msCompile"
         }
     ]

@@ -15,11 +15,10 @@
         NetworkController controller = NetworkController.Instance;
 
         controller.createStartGeneration(10, input, expectedOutput);
-
+        
 
         while(true)
         {
-
             Console.WriteLine("Press enter to make new generation");
             Console.ReadLine();
             controller.createNewGeneration(10);
