@@ -2,22 +2,31 @@
 {
     static void Main(string[] args)
     {
-        List<Neuron> input = new() 
+        List<Neuron> input = new()
         {
             new InputNeuron(0),
-            new InputNeuron(1)
+            new InputNeuron(0),
+            new InputNeuron(0),
+            new InputNeuron(0),
+            new InputNeuron(0),
+            new InputNeuron(1),
+            new InputNeuron(1),
+            new InputNeuron(1),
+            new InputNeuron(1),
+            new InputNeuron(1),
+
         };
         List<Neuron> expectedOutput = new()
         {
-            new InputNeuron(1)
+            new InputNeuron(1),
         };
 
         NetworkController controller = NetworkController.Instance;
 
         controller.createStartGeneration(10, input, expectedOutput);
-        
 
-        while(true)
+
+        while (true)
         {
             Console.WriteLine("Press enter to make new generation");
             Console.ReadLine();

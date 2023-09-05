@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Projects\\Neural-Network-Test-Project\\AI test.csproj": {}
+    "C:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj": {}
   },
   "projects": {
-    "c:\\Projects\\Neural-Network-Test-Project\\AI test.csproj": {
+    "C:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projects\\Neural-Network-Test-Project\\AI test.csproj",
+        "projectUniqueName": "C:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj",
         "projectName": "AI test",
-        "projectPath": "c:\\Projects\\Neural-Network-Test-Project\\AI test.csproj",
+        "projectPath": "C:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj",
         "packagesPath": "C:\\Users\\noahg\\.nuget\\packages\\",
-        "outputPath": "c:\\Projects\\Neural-Network-Test-Project\\obj\\",
+        "outputPath": "C:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\noahg\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
