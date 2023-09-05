@@ -13,7 +13,7 @@
             "args": [],
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
-            "integratedTerminalOptions": "openOnSessionStart",
+            // "integratedTerminalOptions": "openOnSessionStart",
             "stopAtEntry": false
         },
         {

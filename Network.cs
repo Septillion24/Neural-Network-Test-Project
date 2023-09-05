@@ -8,6 +8,10 @@ class Network
     {
         createNetwork(input, 2, 12, 1);
     }
+    public Network(List<Neuron> input, int numHiddenLayers, int neuronsInHiddenLayers, int outputNeurons)
+    {
+        createNetwork(input, numHiddenLayers, neuronsInHiddenLayers, outputNeurons);
+    }
     public Network(List<Neuron> inputLayer, List<List<Neuron>> hiddenLayers, List<Neuron> outputLayer)
     {
         this.inputLayer = inputLayer;
