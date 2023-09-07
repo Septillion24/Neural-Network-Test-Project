@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj": {}
+    "c:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj": {
+    "c:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj",
+        "projectUniqueName": "c:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj",
         "projectName": "AI test",
-        "projectPath": "C:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj",
+        "projectPath": "c:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\AI test.csproj",
         "packagesPath": "C:\\Users\\noahg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\obj\\",
+        "outputPath": "c:\\Users\\noahg\\Projects\\Neural-Network-Test-Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\noahg\\AppData\\Roaming\\NuGet\\NuGet.Config"
